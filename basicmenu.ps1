@@ -17,7 +17,7 @@ $menu = $(
     "Enter Menu Option Number:"
     )
 
-# Loop through the menu until the user has entered a choice
+# Loop through the menu
 
 Do {
     Write-Host -fore cyan "$menu"
