@@ -26,4 +26,4 @@ New-Alias -Name grep -Value Select-String
     Get-Command
 
 # Show all commands on your local Windows Box
-    Get-Comand | Out-GridView
+    Get-Command | Out-GridView
