@@ -1,3 +1,5 @@
+Break 
+
 # List directory contents
 
 Write-Host -ForegroundColor Cyan "List content with 'dir " 
@@ -26,4 +28,4 @@ New-Alias -Name grep -Value Select-String
     Get-Command
 
 # Show all commands on your local Windows Box
-    Get-Command | Out-GridView
+    Get-Comand | Out-GridView
