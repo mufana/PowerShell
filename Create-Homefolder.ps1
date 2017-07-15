@@ -15,10 +15,6 @@ PSversion     :  5.1
 Organization  :  AR
                  CopyRight (C) 2017, All Rights Reserved
 ================================================================
-****************************************************************
-*  USE AT YOUR OWN RISK. DON'T USE IF YOU DO NOT UNDERSTAND    * 
-*          WHAT THIS SCRIPT DOES OR HOW IT WORKS,              *
-****************************************************************
 #>
 
 <#
