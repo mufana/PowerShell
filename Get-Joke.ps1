@@ -6,22 +6,7 @@ function Get-Joke{
         accept = "application/json"
     }
     
-    $returnValue = [PSCustomObject]@{
-        Data = $null
-        Error = @{
-            Code = $null
-            Message = $null
-        }
-    }
+    $returnValue = Invoke-RestMethod -Method Get -Uri https://icanhazdadjoke.com -Headers $headers
 
-    try {
-        $returnValue.Data = Invoke-RestMethod -Method Get -Uri https://icanhazdadjoke.com/ -Headers $headers
-    } catch {
-        $ex = $PSItem
-        $returnValue.Error.Message = $ex.Exception.Message
-        $returnValue.Error.Code = "0x$('{0:X8}' -f $ex.Exception.HResult)"
-        Write-Error $returnValue.Error.Message
-    }
-
-    Write-Output $returnValue.Data.Joke
+    Write-Output $returnValue.Joke
 }
